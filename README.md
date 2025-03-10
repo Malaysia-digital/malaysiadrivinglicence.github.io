@@ -1,7 +1,7 @@
-Malaysian Driving License Guide
+**Malaysian Driving License Guide**
 Welcome to the official guide for obtaining and managing a Malaysian Driving License! Whether you're a local, an expat, or looking to convert a foreign license, this guide has all the detailed steps you need.
 
-Table of Contents
+**Table of Contents**
 Overview
 
 Steps for Locals
