@@ -1,75 +1,105 @@
-# malaysiadrivinglicence.github.io
-Malaysian driving license
-[DRAFT]
-1. For Locals
-Step 1: Register with a driving school to obtain a Learner's Driving License (LDL).
+Malaysian Driving License Guide
+Welcome to the official guide for obtaining and managing a Malaysian Driving License! Whether you're a local, an expat, or looking to convert a foreign license, this guide has all the detailed steps you need.
 
-Step 2: Attend a 5-hour theory course and pass the computerized Highway Code Exam.
+Table of Contents
+Overview
 
-Step 3: Obtain your LDL and complete at least 16 hours of practical driving lessons.
+Steps for Locals
 
-Step 4: Pass the driving test conducted by JPJ (Road Transport Department).
+For Expats with Work Visa
 
-Step 5: Receive a Probationary Driving License (PDL) valid for 2 years. After this period, you can convert it to a Competent Driving License (CDL).
+For Spouses on Dependent Visa
 
-2. For Expats with Work Visa
+Converting P License to CDL
+
+Converting Indian License to Malaysian License
+
+Overview
+This guide simplifies the process of obtaining and converting Malaysian driving licenses. Whether you're starting fresh, upgrading your P license, or converting a foreign license, follow these steps to get on the road legally in Malaysia.
+
+Steps for Locals
+Register with a Driving School: Start with a Learner's Driving License (LDL).
+
+Attend a Theory Course: Complete the 5-hour theory class and pass the Highway Code Exam.
+
+Driving Lessons: Obtain your LDL and complete a minimum of 16 hours of practical driving lessons.
+
+Driving Test: Pass the driving test conducted by JPJ (Road Transport Department).
+
+Probationary License (PDL): Valid for 2 years, after which you can convert to a Competent Driving License (CDL).
+
+For Expats with Work Visa
 Option 1: Apply for a Malaysian Driving License
+Follow the steps for locals (register with a driving school, pass the tests, and obtain a PDL).
 
-Follow the same steps as locals (register with a driving school, pass the theory and practical tests, and obtain a PDL).
+Required Documents: Valid work visa, passport, and identification.
 
-Ensure you have a valid work visa and passport for identification.
+Option 2: Convert a Foreign Driving License
+Check if your home country is on Malaysia's approved conversion list.
 
-Option 2: Convert Your Foreign License
+Prepare the following:
 
-Check if your home country is on Malaysia’s approved license conversion list.
-
-Submit the following documents to JPJ:
-
-Original foreign driving license (translated if not in English or Malay).
+Original foreign license (translated if not in English or Malay).
 
 Passport and visa page.
 
-Completed JPJ application forms (JPJL1 and Appendix B-2).
+Completed JPJ forms (JPJL1 and Appendix B-2).
 
-Medical check-up report (if required).
+Medical report (if applicable).
 
-Processing time varies but can take up to 30 working days.
+Submit your application to JPJ.
 
-3. For Expats’ Spouses on Dependent Visa
+Processing Time: Up to 30 working days.
+
+For Spouses on Dependent Visa
 Eligibility: Spouses on dependent visas can apply for a Malaysian driving license or convert their foreign license.
 
-Steps:
+Follow the same process as for expats with work visas.
 
-Follow the same process as expats with work visas.
+Converting P License to CDL
+Complete the 2-year probationary period with a clean driving record.
 
-Ensure all documents, including the dependent visa, are submitted to JPJ.
+Apply for a CDL at a JPJ office or via the MyJPJ app.
 
-4. Converting P License to Normal License (CDL)
-Step 1: Ensure you have completed the 2-year probationary period with a clean driving record.
+Submit:
 
-Step 2: Apply for a CDL at any JPJ office or online via the MyJPJ app.
+PDL.
 
-Step 3: Submit your PDL, MyKad (or passport for foreigners), and a passport-sized photo.
+MyKad or passport for foreigners.
 
-Step 4: Pay the fee (RM30 per year, up to 5 years).
+Passport-sized photo.
 
-Step 5: Receive your CDL, which allows you to drive without restrictions.
+Pay the fee: RM30 per year (up to 5 years).
 
-5. Converting Indian License to Malaysian License
-Step 1: Check if India is on Malaysia’s approved license conversion list.
+Receive your Competent Driving License (CDL).
 
-Step 2: Prepare the required documents:
+Converting Indian License to Malaysian License
+Check if India is on Malaysia's approved conversion list.
 
-Original Indian driving license (translated if not in English or Malay).
+Prepare:
+
+Original Indian driving license (translated if needed).
 
 Passport and visa page.
 
-Completed JPJ application forms (JPJL1 and Appendix B-2).
+Completed JPJ forms (JPJL1 and Appendix B-2).
 
-Medical check-up report (if required).
+Medical report (if applicable).
 
-Step 3: Submit the application to JPJ.
+Submit the application to JPJ.
 
-Step 4: Wait for approval (processing time can take up to 30 working days).
+Processing Time: Up to 30 working days.
 
-Step 5: Once approved, collect your Malaysian driving license.
+Once approved, collect your Malaysian driving license.
+
+Key Highlights
+Comprehensive guide for locals and expats.
+
+Step-by-step instructions tailored to various scenarios.
+
+Simplified process to ensure successful application.
+
+Contact Us
+For any questions or additional support, please reach out to us at [your email/contact information].
+
+Happy Driving! 🚗
