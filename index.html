@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysian Driving License Guide</title>
+    <style>
+        :root {
+            --blue: #000095;
+            --red: #cc0001;
+            --yellow: #ffd100;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --dark-gray: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--blue), #0056b3);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                transparent 25%, rgba(255,255,255,0.05) 25%, 
+                rgba(255,255,255,0.05) 50%, transparent 50%, 
+                transparent 75%, rgba(255,255,255,0.05) 75%);
+            background-size: 20px 20px;
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .flag-stripe {
+            height: 10px;
+            display: flex;
+        }
+        
+        .flag-stripe div {
+            flex: 1;
+        }
+        
+        .flag-blue {
+            background-color: var(--blue);
+        }
+        
+        .flag-red {
+            background-color: var(--red);
+        }
+        
+        .flag-yellow {
+            background-color: var(--yellow);
+        }
+        
+        .flag-white {
+            background-color: var(--white);
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .icon-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .icon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        
+        .icon-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+        }
+        
+        .icon-card.locals::after {
+            background-color: var(--blue);
+        }
+        
+        .icon-card.expats::after {
+            background-color: var(--red);
+        }
+        
+        .icon-card.spouses::after {
+            background-color: var(--yellow);
+        }
+        
+        .icon-card.convert-p::after {
+            background-color: var(--blue);
+        }
+        
+        .icon-card.convert-indian::after {
+            background-color: var(--red);
+        }
+        
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .icon-card:hover .icon {
+            transform: scale(1.1);
+        }
+        
+        .icon-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .content-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--blue);
+            border-bottom: 2px solid var(--yellow);
+            padding-bottom: 0.5rem;
+        }
+        
+        .content-section ul {
+            list-style-type: none;
+            margin-left: 1rem;
+        }
+        
+        .content-section li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .content-section li::before {
+            content: '»';
+            color: var(--red);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        
+        .content-section h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.5rem 0;
+            color: var(--blue);
+        }
+        
+        .step {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--blue);
+        }
+        
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--blue);
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .back-to-top {
+            display: inline-block;
+            background-color: var(--blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .icon-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            
+            .icon-card {
+                height: 200px;
+            }
+            
+            .icon {
+                font-size: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Malaysian Driving License Guide</h1>
+            <p>Your complete resource for obtaining a driving license in Malaysia</p>
+        </div>
+    </header>
+    
+    <div class="flag-stripe">
+        <div class="flag-blue"></div>
+        <div class="flag-red"></div>
+        <div class="flag-yellow"></div>
+        <div class="flag-white"></div>
+    </div>
+    
+    <div class="container">
+        <div class="icon-grid">
+            <div class="icon-card locals" onclick="showContent('locals')">
+                <div class="icon">👨‍👩‍👧‍👦</div>
+                <h3>For Locals</h3>
+                <p>Malaysian citizens</p>
+            </div>
+            
+            <div class="icon-card expats" onclick="showContent('expats')">
+                <div class="icon">🌏</div>
+                <h3>For Expats</h3>
+                <p>With work visa</p>
+            </div>
+            
+            <div class="icon-card spouses" onclick="showContent('spouses')">
+                <div class="icon">💑</div>
+                <h3>For Spouses</h3>
+                <p>On dependent visa</p>
+            </div>
+            
+            <div class="icon-card convert-p" onclick="showContent('convert-p')">
+                <div class="icon">🔄</div>
+                <h3>P to CDL</h3>
+                <p>License conversion</p>
+            </div>
+            
+            <div class="icon-card convert-indian" onclick="showContent('convert-indian')">
+                <div class="icon">🇮🇳</div>
+                <h3>Indian License</h3>
+                <p>Converting to Malaysian</p>
+            </div>
+        </div>
+        
+        <div id="locals-content" class="content-section">
+            <h2>For Locals</h2>
+            <div class="step">
+                <h4>Step 1</h4>
+                <p>Register with a driving school to obtain a Learner's Driving License (LDL).</p>
+            </div>
+            <div class="step">
+                <h4>Step 2</h4>
+                <p>Attend a 5-hour theory course and pass the computerized Highway Code Exam.</p>
+            </div>
+            <div class="step">
+                <h4>Step 3</h4>
+                <p>Obtain your LDL and complete at least 16 hours of practical driving lessons.</p>
+            </div>
+            <div class="step">
+                <h4>Step 4</h4>
+                <p>Pass the driving test conducted by JPJ (Road Transport Department).</p>
+            </div>
+            <div class="step">
+                <h4>Step 5</h4>
+                <p>Receive a Probationary Driving License (PDL) valid for 2 years. After this period, you can convert it to a Competent Driving License (CDL).</p>
+            </div>
+        </div>
+        
+        <div id="expats-content" class="content-section">
+            <h2>For Expats with Work Visa</h2>
+            <h3>Option 1: Apply for a Malaysian Driving License</h3>
+            <ul>
+                <li>Follow the same steps as locals (register with a driving school, pass the theory and practical tests, and obtain a PDL).</li>
+                <li>Ensure you have a valid work visa and passport for identification.</li>
+            </ul>
+            
+            <h3>Option 2: Convert Your Foreign License</h3>
+            <ul>
+                <li>Check if your home country is on Malaysia's approved license conversion list.</li>
+                <li>Submit the following documents to JPJ:
+                    <ul>
+                        <li>Original foreign driving license (translated if not in English or Malay).</li>
+                        <li>Passport and visa page.</li>
+                        <li>Completed JPJ application forms (JPJL1 and Appendix B-2).</li>
+                        <li>Medical check-up report (if required).</li>
+                    </ul>
+                </li>
+                <li>Processing time varies but can take up to 30 working days.</li>
+            </ul>
+        </div>
+        
+        <div id="spouses-content" class="content-section">
+            <h2>For Expats' Spouses on Dependent Visa</h2>
+            <h3>Eligibility</h3>
+            <p>Spouses on dependent visas can apply for a Malaysian driving license or convert their foreign license.</p>
+            
+            <h3>Steps</h3>
+            <ul>
+                <li>Follow the same process as expats with work visas.</li>
+                <li>Ensure all documents, including the dependent visa, are submitted to JPJ.</li>
+            </ul>
+        </div>
+        
+        <div id="convert-p-content" class="content-section">
+            <h2>Converting P License to Normal License (CDL)</h2>
+            <div class="step">
+                <h4>Step 1</h4>
+                <p>Ensure you have completed the 2-year probationary period with a clean driving record.</p>
+            </div>
+            <div class="step">
+                <h4>Step 2</h4>
+                <p>Apply for a CDL at any JPJ office or online via the MyJPJ app.</p>
+            </div>
+            <div class="step">
+                <h4>Step 3</h4>
+                <p>Submit your PDL, MyKad (or passport for foreigners), and a passport-sized photo.</p>
+            </div>
+            <div class="step">
+                <h4>Step 4</h4>
+                <p>Pay the fee (RM30 per year, up to 5 years).</p>
+            </div>
+            <div class="step">
+                <h4>Step 5</h4>
+                <p>Receive your CDL, which allows you to drive without restrictions.</p>
+            </div>
+        </div>
+        
+        <div id="convert-indian-content" class="content-section">
+            <h2>Converting Indian License to Malaysian License</h2>
+            <div class="step">
+                <h4>Step 1</h4>
+                <p>Check if India is on Malaysia's approved license conversion list.</p>
+            </div>
+            <div class="step">
+                <h4>Step 2</h4>
+                <p>Prepare the required documents:</p>
+                <ul>
+                    <li>Original Indian driving license (translated if not in English or Malay).</li>
+                    <li>Passport and visa page.</li>
+                    <li>Completed JPJ application forms (JPJL1 and Appendix B-2).</li>
+                    <li>Medical check-up report (if required).</li>
+                </ul>
+            </div>
+            <div class="step">
+                <h4>Step 3</h4>
+                <p>Submit the application to JPJ.</p>
+            </div>
+            <div class="step">
+                <h4>Step 4</h4>
+                <p>Wait for approval (processing time can take up to 30 working days).</p>
+            </div>
+            <div class="step">
+                <h4>Step 5</h4>
+                <p>Once approved, collect your Malaysian driving license.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Malaysian Driving License Guide. All information is provided for guidance only.</p>
+            <p>Please consult the official JPJ (Road Transport Department) website for the most up-to-date information.</p>
+            <a href="#" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+    
+    <script>
+        function showContent(section) {
+            // Hide all content sections
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show the selected section
+            const selectedContent = document.getElementById(section + '-content');
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+                
+                // Scroll to the content with smooth animation
+                selectedContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+</body>
+</html>
